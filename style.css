@@ -1,0 +1,161 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0%;
+    height: 300vh;
+    font-family: sans-serif;
+    
+}
+.nav{
+    background: 
+            rgb(2,0,36);
+    background: 
+            linear-gradient(90deg,
+                rgba(2,  0, 36,1)  0%, 
+                rgba(9,  9,121,1)  0%, 
+                rgba(0,212,255,1) 62%
+            );
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+    }
+
+.nav a{
+    text-decoration: none;
+    padding: 15px;
+    color: #131752;
+    font: 500 18px/24px sans-serif;
+}
+
+.nav a:last-child{
+    padding-right: 50px;
+}
+
+.tela_inteira{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #090979;
+}
+
+#Apresentacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff ;
+    font-size: 1.5rem;
+    text-align:center;
+}
+
+
+#Apresentacao h1,
+#Apresentacao h2,
+#Apresentacao h3
+{
+    margin: 5px;
+}
+
+#Project .titulo{
+    font: 400 3rem/3.5rem  sans-serif;
+    padding: 100px 50px 50px 50px;
+    text-align: center;
+}
+
+#Project .projects{
+    display:grid;
+    grid-template-columns: 1fr;
+    padding: 40px;
+    gap: 50px;    
+}
+
+#Project .projects .Card{
+    box-shadow: 0 0 5px #555;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+#Project 
+.projects 
+.Card:hover
+{
+    transform: scale(1.05) ;
+    box-shadow: 0 5px 5px #555;
+}
+
+#Project 
+.projects 
+.Card 
+.project_card
+{
+    width: 100%;
+    height: 250px;
+}
+
+#Project 
+.projects 
+.Card 
+.texto_card
+{
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+.avatar
+{
+    width: 50%;
+}
+
+#Contact 
+a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+    @keyframes ef-pulse-grow {
+    to {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    }
+    }
+    .ef-pulse-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    animation-name: ef-pulse-grow;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: #fff;
+    }
+
+@media(min-width:800px) {
+    #Apresentacao{
+        justify-content: space-evenly;
+        flex-direction: row;
+        padding: 0 50px;
+    }
+    #Apresentacao .bloco_de_texto{
+    display: flex;
+    flex-direction: column;
+    }
+    #Project .projects{
+    grid-template-columns: repeat(3,1fr);
+    
+
+  } 
+  .avatar{
+      width: 400px;
+  }
+}
