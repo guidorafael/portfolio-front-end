@@ -1,3 +1,7 @@
+* {
+    text-decoration: none;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -81,6 +85,8 @@ body{
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
+
+
 #Project 
 .projects 
 .Card:hover
@@ -98,6 +104,11 @@ body{
     height: 250px;
 }
 
+.project_card_05{
+  transform: scale(0.5);
+}
+
+
 #Project 
 .projects 
 .Card 
@@ -106,6 +117,7 @@ body{
     font-size: 1.5rem;
     padding: 5px 10px;
     text-align: center;
+    text-decoration: none;
 }
 
 .avatar
@@ -121,7 +133,7 @@ a
 }
 
 
-    @keyframes ef-pulse-grow {
+@keyframes ef-pulse-grow {
     to {
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
